@@ -1,0 +1,114 @@
+/* Custom CSS Styling for Stellar Nexus Lunar Site Selection Platform */
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080d1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e2f4f;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f2fe;
+}
+
+/* Nav Tab Active State */
+.active-tab {
+  background: linear-gradient(135deg, rgba(0, 242, 254, 0.15), rgba(79, 172, 254, 0.05));
+  border: 1px solid rgba(0, 242, 254, 0.4);
+  color: #00f2fe !important;
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.15);
+}
+
+/* 3D Canvas Styling */
+#moon-canvas {
+  touch-action: none;
+}
+
+/* Glow effects */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
+}
+
+.glow-amber {
+  box-shadow: 0 0 20px rgba(255, 179, 0, 0.3);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 20px rgba(0, 230, 118, 0.3);
+}
+
+/* Range input styling */
+input[type=range] {
+  -webkit-appearance: none;
+  background: #0d1527;
+  border: 1px solid #1e2f4f;
+  border-radius: 9999px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #00f2fe;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00f2fe;
+  border: 2px solid #080d1a;
+  transition: transform 0.1s;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Matrix row hover */
+.matrix-row {
+  transition: all 0.15s ease-in-out;
+}
+
+.matrix-row:hover {
+  background-color: rgba(19, 31, 56, 0.7) !important;
+}
+
+/* Raster map canvas */
+#raster-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
