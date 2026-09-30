@@ -1,6 +1,6 @@
 # 🌕 Stellar Nexus: Lunar Exploration Site Selection & Analysis Platform
 
-> **Smart India Hackathon (SIH 2026)**  
+> **Smart India Hackathon  (SIH 2026)**  
 > **Problem Statement ID:** `SIH26209`  
 > **Theme:** Space Technology | **Category:** Software  
 > **Team:** Stellar Nexus  
